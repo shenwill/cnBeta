@@ -80,10 +80,13 @@
 	//Mon, 21 Jun 2010 08:44:40 GMT
 	
 	NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+  NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en"];
+  [inputFormatter setLocale:locale];
 	[inputFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
 	[inputFormatter setDateFormat:@"EEE, d MMM yyyy HH:mm:ss 'GMT'"];
 	NSDate *formatterDate = [inputFormatter dateFromString:date];
     [inputFormatter release];
+  [locale release];
 	
 	if (formatterDate == nil) {
 		return date;

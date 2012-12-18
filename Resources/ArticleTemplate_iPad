@@ -16,6 +16,7 @@ h1{
 
 img{
     max-width:680px;
+    height:auto;
 }
 .re_mark{
     display:none;

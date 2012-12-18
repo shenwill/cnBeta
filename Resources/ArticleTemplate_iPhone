@@ -26,6 +26,7 @@ textarea{
 
 img{
     max-width:300px;
+    height:auto;
 }
 .re_mark{
     display:none;

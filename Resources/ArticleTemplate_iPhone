@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport"/>
+<script language="javascript" type="text/javascript" src="/js/tem.js?v=071113"></script>
+<script language="javascript" type="text/javascript" src="/js/ajax.js"></script>
+<script type="text/javascript" language="javascript" src="/js/behavior.js"></script>
+<script type="text/javascript" language="javascript" src="/js/rating.js"></script>
+<title>This is Matthew Gao</title>
+<style>
+body {
+	-webkit-user-select: none;	
+}
+			
+h1{
+    font-size:16px;
+    text-align:center;
+    border-bottom:1px solid gray;
+}
+
+textarea{
+    width:300px;
+    height:100px;
+}
+
+img{
+    max-width:300px;
+}
+.re_mark{
+    display:none;
+}
+.re_author{
+    border-top:1px solid gray;
+}
+.subTitle{
+    display:none;
+}
+
+.digbox{
+    display:none;
+}
+
+#googleAd_afc{
+    display:none;
+}
+</style>
+</head>
+<body>
+<h1>{title}</h1>
+{body}
+<div style="height:50px">
+</div>
+</body>
+</html>

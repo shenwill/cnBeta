@@ -48,7 +48,11 @@
 			mainView = nil;
 		}
 		
-		CGRect frame = CGRectMake(0.0, 0.0, 320.0, 416.0);
+    // the height was hard-coded as 416.0, it's the height of
+    // self.view.frame.size for 3.5 inch display.
+    // the width was 320.0.
+		CGRect frame = CGRectMake(0.0, 0.0, self.view.frame.size.width,
+                              self.view.frame.size.height);
 		
 		mainView = [[UIWebView alloc] initWithFrame:frame];
 		mainView.delegate = self;

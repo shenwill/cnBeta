@@ -99,14 +99,16 @@
     
     article = [[self parseArticle:self.item.ID] retain];
     
-	if (article) {
+	// If article is nil, and comments not nil, commenta will be displayed with empty article content.
+    // If article is nil, as well as comments, an alert will be shown.
+    //if (article) {
         NSString *comment = [self parseComment:self.item.ID];
         if (comment) {
-            [self performSelectorOnMainThread:@selector(didGetArticle:) withObject:[NSString stringWithFormat:@"%@<br />%@", article, comment] waitUntilDone:NO];
+            [self performSelectorOnMainThread:@selector(didGetArticle:) withObject:[NSString stringWithFormat:@"%@<br />%@", article ? : @"", comment] waitUntilDone:NO];
         }else{
             [self performSelectorOnMainThread:@selector(didGetArticle:) withObject:article waitUntilDone:NO];
         }
-    }
+    //}
     
     [pool release];
 }

@@ -26,7 +26,7 @@
 	navigationController.navigationBar.tintColor = [UIColor lightGrayColor];
     
     // Add the navigation controller's view to the window and display.
-    [window addSubview:navigationController.view];
+    window.rootViewController = navigationController;
     [window makeKeyAndVisible];
 
     return YES;

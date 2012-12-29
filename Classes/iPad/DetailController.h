@@ -11,12 +11,11 @@
 #import "MGRssParser.h"
 
 
-@interface DetailController : UIViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate, UIActionSheetDelegate, UISplitViewControllerDelegate, UIPopoverControllerDelegate>{
+@interface DetailController : UIViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate, UISplitViewControllerDelegate, UIPopoverControllerDelegate>{
 	UIWebView *mainView;
 	UINavigationItem *navItem;
 	UIPopoverController *popoverController;
 	UIBarButtonItem *detailItem;
-	UIActionSheet *shareMenu;
     
     NSThread *thread;
 	
@@ -32,10 +31,5 @@
 - (NSString *)parseArticle:(NSString *)ID;
 - (NSString *)parseComment:(NSString *)ID;
 - (void)didGetArticle:(NSString *)string;
-
-- (void)setupAdmobView;
-- (void)emailShare;
-- (void)weiboShare;
-- (void)fetionShare;
 
 @end

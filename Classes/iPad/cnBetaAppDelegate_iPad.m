@@ -28,7 +28,7 @@
 	[ASIHTTPRequest setShouldUpdateNetworkActivityIndicator:NO];
     
     // Add the navigation controller's view to the window and display.
-    [window addSubview:splitController.view];
+    window.rootViewController = splitController;
     [window makeKeyAndVisible];
 
     return YES;

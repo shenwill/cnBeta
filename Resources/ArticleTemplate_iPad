@@ -4,29 +4,45 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport"/>
 <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	-webkit-user-select: none;	
+    padding: 10px;
+    color: #333;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Hiragino Sans GB","Hiragino Sans GB W3",Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
 }
 
 h1{
-    font-size:18px;
-    text-align:center;
-    border-bottom:1px solid gray;
+    border-bottom: 1px solid #666;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
 }
 
 img{
-    max-width:680px;
-    height:auto !important;
+    max-width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
 .re_mark{
     display:none;
 }
+
 .re_author{
-    border-top:1px solid gray;
+    margin-top: 10px;
+    border-top:1px solid #666;
 }
+
 .subTitle{
     display:none;
 }
+
 .digbox{
     display:none;
 }
@@ -34,6 +50,7 @@ img{
 #googleAd_afc{
     display:none;
 }
+
 </style>
 </head>
 <body>

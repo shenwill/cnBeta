@@ -10,7 +10,7 @@
 #import <MessageUI/MessageUI.h>
 #import "MGRssParser.h"
 
-@interface DetailViewController : UIViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate, UIActionSheetDelegate>{
+@interface DetailViewController : UIViewController <UIWebViewDelegate, MFMailComposeViewControllerDelegate>{
     UIWebView *mainView;
     NSThread *thread;
     
@@ -26,9 +26,5 @@
 - (NSString *)parseArticle:(NSString *)ID;
 - (NSString *)parseComment:(NSString *)ID;
 - (void)didGetArticle:(NSString *)string;
-
-- (void)emailShare;
-- (void)weiboShare;
-- (void)fetionShare;
 
 @end

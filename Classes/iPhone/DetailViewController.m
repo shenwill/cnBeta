@@ -9,7 +9,6 @@
 #import "DetailViewController.h"
 #import "ASIHTTPRequest.h"
 #import "WebViewController.h"
-#import "WeiboViewController.h"
 #import "cnBetaAppDelegate_iPhone.h"
 #import "HTMLParser.h"
 
@@ -232,33 +231,6 @@
 
 
 - (void)share{
-	//load image
-	UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"邮件分享", @"微博分享", @"飞信分享", nil];	
-	[action showInView:self.view];
-	[action release];
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-	if (buttonIndex == actionSheet.cancelButtonIndex) {
-		return;
-	}
-	
-	if (buttonIndex == 0) {
-		//share via email
-		[self emailShare];
-	}else if (buttonIndex == 1) {
-		//share via weibo
-		[self weiboShare];
-	}else if (buttonIndex == 2) {
-		//share via fetion
-		[self fetionShare];
-	}else{
-		return;
-	}
-}
-
-
-- (void)emailShare{
 	if([MFMailComposeViewController canSendMail]){
 		MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
 		controller.mailComposeDelegate = self;
@@ -276,31 +248,6 @@
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error{
 	[self dismissModalViewControllerAnimated:YES];
-}
-
-- (void)weiboShare{	
-	WeiboViewController *controller = [[WeiboViewController alloc] initWithNibName:@"WeiboViewController" bundle:nil];
-	controller.content = [NSString stringWithFormat:@"%@ %@",item.title, item.link];
-	[self presentModalViewController:controller animated:YES];
-	[controller release];
-}
-
-- (void)fetionShare{	
-	[[UIPasteboard generalPasteboard] setValue:[NSString stringWithFormat:@"%@ %@",item.title, item.link] forPasteboardType:@"public.utf8-plain-text"];
-	
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"飞信分享" message:@"内容已经复制到剪贴版, 确认打开\n爱飞信分享给好友吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
-	[alert show];
-	[alert release];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-	if (buttonIndex == 1) {
-		if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"ifetion://"]]) {
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"ifetion://"]];
-		}else {
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/app/ifetion/id365460856?mt=8"]];
-		}
-	}
 }
 
 

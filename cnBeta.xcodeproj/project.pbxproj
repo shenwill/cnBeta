@@ -53,32 +53,15 @@
 		C553F5EC12856C4E00E33D43 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = C553F5D612856C4E00E33D43 /* next.png */; };
 		C553F5F212856C4E00E33D43 /* RssCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C553F5DD12856C4E00E33D43 /* RssCell.xib */; };
 		C5802EB0133DB40B00C82FF8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5802EAF133DB40B00C82FF8 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C5802ECE133DB43100C82FF8 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = C5802EB2133DB43100C82FF8 /* Base64Transcoder.c */; };
-		C5802ECF133DB43100C82FF8 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EB5133DB43100C82FF8 /* NSMutableURLRequest+Parameters.m */; };
-		C5802ED0133DB43100C82FF8 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EB7133DB43100C82FF8 /* NSString+URLEncoding.m */; };
-		C5802ED1133DB43100C82FF8 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EB9133DB43100C82FF8 /* NSURL+Base.m */; };
-		C5802ED2133DB43100C82FF8 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EBB133DB43100C82FF8 /* OAAsynchronousDataFetcher.m */; };
-		C5802ED3133DB43100C82FF8 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EBD133DB43100C82FF8 /* OAConsumer.m */; };
-		C5802ED4133DB43100C82FF8 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EBF133DB43100C82FF8 /* OADataFetcher.m */; };
-		C5802ED5133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EC1133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.m */; };
-		C5802ED6133DB43100C82FF8 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EC3133DB43100C82FF8 /* OAMutableURLRequest.m */; };
-		C5802ED7133DB43100C82FF8 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EC5133DB43100C82FF8 /* OAPlaintextSignatureProvider.m */; };
-		C5802ED8133DB43100C82FF8 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EC7133DB43100C82FF8 /* OARequestParameter.m */; };
-		C5802ED9133DB43100C82FF8 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802EC9133DB43100C82FF8 /* OAServiceTicket.m */; };
-		C5802EDA133DB43100C82FF8 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = C5802ECC133DB43100C82FF8 /* OAToken.m */; };
-		C5A57BD9132FD03300BE32AD /* MGWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A57BD3132FD03300BE32AD /* MGWeibo.m */; };
 		C5EC5DB112E461470087F319 /* MGRssParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5DAD12E461470087F319 /* MGRssParser.m */; };
 		C5EC5DB212E461470087F319 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5DB012E461470087F319 /* EGORefreshTableHeaderView.m */; };
 		C5EC5DC212E4614F0087F319 /* cnBetaAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5DB612E4614F0087F319 /* cnBetaAppDelegate_iPhone.m */; };
 		C5EC5DC312E4614F0087F319 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5DB812E4614F0087F319 /* DetailViewController.m */; };
 		C5EC5DC512E4614F0087F319 /* RssCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5DBD12E4614F0087F319 /* RssCell.m */; };
-		C5EC5DC712E4614F0087F319 /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5DC112E4614F0087F319 /* WeiboViewController.m */; };
 		C5EC5DCD12E4615D0087F319 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EC5DC912E4615D0087F319 /* DetailViewController.xib */; };
 		C5EC5DCE12E4615D0087F319 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EC5DCA12E4615D0087F319 /* MainWindow_iPhone.xib */; };
 		C5EC5DCF12E4615D0087F319 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EC5DCB12E4615D0087F319 /* WebViewController.xib */; };
-		C5EC5DD012E4615D0087F319 /* WeiboViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EC5DCC12E4615D0087F319 /* WeiboViewController.xib */; };
 		C5EC5E0012E461EF0087F319 /* WebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EC5DFD12E461EF0087F319 /* WebController.xib */; };
-		C5EC5E0112E461EF0087F319 /* WeiboController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EC5DFE12E461EF0087F319 /* WeiboController.xib */; };
 		C5EC5E1B12E463AF0087F319 /* cnBetaAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5E1612E463AF0087F319 /* cnBetaAppDelegate_iPad.m */; };
 		C5EC5E1D12E463AF0087F319 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5E1A12E463AF0087F319 /* WebController.m */; };
 		C5EC5E5912E465B90087F319 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EC5E5712E465B90087F319 /* DetailController.m */; };
@@ -178,36 +161,6 @@
 		C553F5D612856C4E00E33D43 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		C553F5DD12856C4E00E33D43 /* RssCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RssCell.xib; sourceTree = "<group>"; };
 		C5802EAF133DB40B00C82FF8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		C5802EB2133DB43100C82FF8 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
-		C5802EB3133DB43100C82FF8 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
-		C5802EB4133DB43100C82FF8 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
-		C5802EB5133DB43100C82FF8 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
-		C5802EB6133DB43100C82FF8 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		C5802EB7133DB43100C82FF8 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		C5802EB8133DB43100C82FF8 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
-		C5802EB9133DB43100C82FF8 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
-		C5802EBA133DB43100C82FF8 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
-		C5802EBB133DB43100C82FF8 /* OAAsynchronousDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAsynchronousDataFetcher.m; sourceTree = "<group>"; };
-		C5802EBC133DB43100C82FF8 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
-		C5802EBD133DB43100C82FF8 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
-		C5802EBE133DB43100C82FF8 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
-		C5802EBF133DB43100C82FF8 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
-		C5802EC0133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
-		C5802EC1133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
-		C5802EC2133DB43100C82FF8 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
-		C5802EC3133DB43100C82FF8 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
-		C5802EC4133DB43100C82FF8 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
-		C5802EC5133DB43100C82FF8 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
-		C5802EC6133DB43100C82FF8 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
-		C5802EC7133DB43100C82FF8 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
-		C5802EC8133DB43100C82FF8 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
-		C5802EC9133DB43100C82FF8 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
-		C5802ECA133DB43100C82FF8 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
-		C5802ECB133DB43100C82FF8 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
-		C5802ECC133DB43100C82FF8 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
-		C5802ECD133DB43100C82FF8 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
-		C5A57BD2132FD03300BE32AD /* MGWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGWeibo.h; sourceTree = "<group>"; };
-		C5A57BD3132FD03300BE32AD /* MGWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGWeibo.m; sourceTree = "<group>"; };
 		C5EC5DAC12E461470087F319 /* MGRssParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRssParser.h; sourceTree = "<group>"; };
 		C5EC5DAD12E461470087F319 /* MGRssParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRssParser.m; sourceTree = "<group>"; };
 		C5EC5DAF12E461470087F319 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
@@ -218,14 +171,10 @@
 		C5EC5DB812E4614F0087F319 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C5EC5DBC12E4614F0087F319 /* RssCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssCell.h; sourceTree = "<group>"; };
 		C5EC5DBD12E4614F0087F319 /* RssCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssCell.m; sourceTree = "<group>"; };
-		C5EC5DC012E4614F0087F319 /* WeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
-		C5EC5DC112E4614F0087F319 /* WeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		C5EC5DC912E4615D0087F319 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		C5EC5DCA12E4615D0087F319 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
 		C5EC5DCB12E4615D0087F319 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
-		C5EC5DCC12E4615D0087F319 /* WeiboViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboViewController.xib; sourceTree = "<group>"; };
 		C5EC5DFD12E461EF0087F319 /* WebController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebController.xib; sourceTree = "<group>"; };
-		C5EC5DFE12E461EF0087F319 /* WeiboController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboController.xib; sourceTree = "<group>"; };
 		C5EC5E1512E463AF0087F319 /* cnBetaAppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cnBetaAppDelegate_iPad.h; sourceTree = "<group>"; };
 		C5EC5E1612E463AF0087F319 /* cnBetaAppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cnBetaAppDelegate_iPad.m; sourceTree = "<group>"; };
 		C5EC5E1912E463AF0087F319 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
@@ -357,8 +306,6 @@
 			children = (
 				C5FF62E514591A18008F2E0D /* JSONFramework */,
 				C52E74771355C08E0071CE1C /* HTMLParser */,
-				C5802EB1133DB43100C82FF8 /* OAuthConsumer */,
-				C5A57BD1132FD03300BE32AD /* MG */,
 				C5EC5DAB12E461470087F319 /* cnBetaEngine */,
 				C5EC5DAE12E461470087F319 /* EGO */,
 				C52312601250665700C28417 /* TouchXML */,
@@ -485,50 +432,6 @@
 			path = Resources/xibs;
 			sourceTree = "<group>";
 		};
-		C5802EB1133DB43100C82FF8 /* OAuthConsumer */ = {
-			isa = PBXGroup;
-			children = (
-				C5802EB2133DB43100C82FF8 /* Base64Transcoder.c */,
-				C5802EB3133DB43100C82FF8 /* Base64Transcoder.h */,
-				C5802EB4133DB43100C82FF8 /* NSMutableURLRequest+Parameters.h */,
-				C5802EB5133DB43100C82FF8 /* NSMutableURLRequest+Parameters.m */,
-				C5802EB6133DB43100C82FF8 /* NSString+URLEncoding.h */,
-				C5802EB7133DB43100C82FF8 /* NSString+URLEncoding.m */,
-				C5802EB8133DB43100C82FF8 /* NSURL+Base.h */,
-				C5802EB9133DB43100C82FF8 /* NSURL+Base.m */,
-				C5802EBA133DB43100C82FF8 /* OAAsynchronousDataFetcher.h */,
-				C5802EBB133DB43100C82FF8 /* OAAsynchronousDataFetcher.m */,
-				C5802EBC133DB43100C82FF8 /* OAConsumer.h */,
-				C5802EBD133DB43100C82FF8 /* OAConsumer.m */,
-				C5802EBE133DB43100C82FF8 /* OADataFetcher.h */,
-				C5802EBF133DB43100C82FF8 /* OADataFetcher.m */,
-				C5802EC0133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.h */,
-				C5802EC1133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.m */,
-				C5802EC2133DB43100C82FF8 /* OAMutableURLRequest.h */,
-				C5802EC3133DB43100C82FF8 /* OAMutableURLRequest.m */,
-				C5802EC4133DB43100C82FF8 /* OAPlaintextSignatureProvider.h */,
-				C5802EC5133DB43100C82FF8 /* OAPlaintextSignatureProvider.m */,
-				C5802EC6133DB43100C82FF8 /* OARequestParameter.h */,
-				C5802EC7133DB43100C82FF8 /* OARequestParameter.m */,
-				C5802EC8133DB43100C82FF8 /* OAServiceTicket.h */,
-				C5802EC9133DB43100C82FF8 /* OAServiceTicket.m */,
-				C5802ECA133DB43100C82FF8 /* OASignatureProviding.h */,
-				C5802ECB133DB43100C82FF8 /* OAToken.h */,
-				C5802ECC133DB43100C82FF8 /* OAToken.m */,
-				C5802ECD133DB43100C82FF8 /* OAuthConsumer.h */,
-			);
-			path = OAuthConsumer;
-			sourceTree = "<group>";
-		};
-		C5A57BD1132FD03300BE32AD /* MG */ = {
-			isa = PBXGroup;
-			children = (
-				C5A57BD2132FD03300BE32AD /* MGWeibo.h */,
-				C5A57BD3132FD03300BE32AD /* MGWeibo.m */,
-			);
-			path = MG;
-			sourceTree = "<group>";
-		};
 		C5EC5DAB12E461470087F319 /* cnBetaEngine */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,8 +485,6 @@
 			children = (
 				C5EC5DBC12E4614F0087F319 /* RssCell.h */,
 				C5EC5DBD12E4614F0087F319 /* RssCell.m */,
-				C5EC5DC012E4614F0087F319 /* WeiboViewController.h */,
-				C5EC5DC112E4614F0087F319 /* WeiboViewController.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -594,7 +495,6 @@
 				C5EC5DC912E4615D0087F319 /* DetailViewController.xib */,
 				C5EC5DCA12E4615D0087F319 /* MainWindow_iPhone.xib */,
 				C5EC5DCB12E4615D0087F319 /* WebViewController.xib */,
-				C5EC5DCC12E4615D0087F319 /* WeiboViewController.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -603,7 +503,6 @@
 			isa = PBXGroup;
 			children = (
 				C5EC5DFD12E461EF0087F319 /* WebController.xib */,
-				C5EC5DFE12E461EF0087F319 /* WeiboController.xib */,
 				C5EC5EAB12E4682D0087F319 /* MainWindow_iPad.xib */,
 				C5EC5FEC12E474930087F319 /* DetailController.xib */,
 			);
@@ -654,7 +553,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "cnBeta" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -691,9 +590,7 @@
 				C5EC5DCD12E4615D0087F319 /* DetailViewController.xib in Resources */,
 				C5EC5DCE12E4615D0087F319 /* MainWindow_iPhone.xib in Resources */,
 				C5EC5DCF12E4615D0087F319 /* WebViewController.xib in Resources */,
-				C5EC5DD012E4615D0087F319 /* WeiboViewController.xib in Resources */,
 				C5EC5E0012E461EF0087F319 /* WebController.xib in Resources */,
-				C5EC5E0112E461EF0087F319 /* WeiboController.xib in Resources */,
 				C5EC5EAC12E4682D0087F319 /* MainWindow_iPad.xib in Resources */,
 				C5EC5FED12E474930087F319 /* DetailController.xib in Resources */,
 				C5EC605A12E479290087F319 /* ArticleTemplate_iPad in Resources */,
@@ -732,7 +629,6 @@
 				C5EC5DC212E4614F0087F319 /* cnBetaAppDelegate_iPhone.m in Sources */,
 				C5EC5DC312E4614F0087F319 /* DetailViewController.m in Sources */,
 				C5EC5DC512E4614F0087F319 /* RssCell.m in Sources */,
-				C5EC5DC712E4614F0087F319 /* WeiboViewController.m in Sources */,
 				C5EC5E1B12E463AF0087F319 /* cnBetaAppDelegate_iPad.m in Sources */,
 				C5EC5E1D12E463AF0087F319 /* WebController.m in Sources */,
 				C5EC5E5912E465B90087F319 /* DetailController.m in Sources */,
@@ -748,20 +644,6 @@
 				C528273B13141280008FB491 /* ASIInputStream.m in Sources */,
 				C528273C13141280008FB491 /* ASINetworkQueue.m in Sources */,
 				C528273D13141280008FB491 /* Reachability.m in Sources */,
-				C5A57BD9132FD03300BE32AD /* MGWeibo.m in Sources */,
-				C5802ECE133DB43100C82FF8 /* Base64Transcoder.c in Sources */,
-				C5802ECF133DB43100C82FF8 /* NSMutableURLRequest+Parameters.m in Sources */,
-				C5802ED0133DB43100C82FF8 /* NSString+URLEncoding.m in Sources */,
-				C5802ED1133DB43100C82FF8 /* NSURL+Base.m in Sources */,
-				C5802ED2133DB43100C82FF8 /* OAAsynchronousDataFetcher.m in Sources */,
-				C5802ED3133DB43100C82FF8 /* OAConsumer.m in Sources */,
-				C5802ED4133DB43100C82FF8 /* OADataFetcher.m in Sources */,
-				C5802ED5133DB43100C82FF8 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
-				C5802ED6133DB43100C82FF8 /* OAMutableURLRequest.m in Sources */,
-				C5802ED7133DB43100C82FF8 /* OAPlaintextSignatureProvider.m in Sources */,
-				C5802ED8133DB43100C82FF8 /* OARequestParameter.m in Sources */,
-				C5802ED9133DB43100C82FF8 /* OAServiceTicket.m in Sources */,
-				C5802EDA133DB43100C82FF8 /* OAToken.m in Sources */,
 				C52E747D1355C08E0071CE1C /* HTMLNode.m in Sources */,
 				C52E747E1355C08E0071CE1C /* HTMLParser.m in Sources */,
 				C5FF62F114591A18008F2E0D /* NSObject+SBJSON.m in Sources */,
@@ -788,7 +670,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "cnBeta-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Support/AdMob\"",
@@ -809,7 +691,7 @@
 				GCC_PREFIX_HEADER = cnBeta_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "cnBeta-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Support/AdMob\"",
@@ -880,7 +762,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "cnBeta-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Support/AdMob\"",

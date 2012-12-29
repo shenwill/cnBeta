@@ -9,14 +9,24 @@
 <script type="text/javascript" language="javascript" src="/js/rating.js"></script>
 <title>This is Matthew Gao</title>
 <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	-webkit-user-select: none;	
+    padding: 10px;
+    color: #333;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Hiragino Sans GB","Hiragino Sans GB W3",Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
 }
 			
 h1{
     font-size:16px;
     text-align:center;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid #666;
+    text-shadow: 0 1px 0 #fff;
 }
 
 textarea{
@@ -25,15 +35,21 @@ textarea{
 }
 
 img{
-    max-width:300px;
-    height:auto !important;
+    max-width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
 .re_mark{
     display:none;
 }
+
 .re_author{
-    border-top:1px solid gray;
+    margin-top: 10px;
+    font-size: 14px;
+    border-top:1px solid #666;
 }
+
 .subTitle{
     display:none;
 }

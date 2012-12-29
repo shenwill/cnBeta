@@ -9,7 +9,6 @@
 #import "DetailController.h"
 #import "ASIHTTPRequest.h"
 #import "WebController.h"
-#import "WeiboViewController.h"
 #import "cnBetaAppDelegate_iPad.h"
 #import "HTMLParser.h"
 
@@ -49,6 +48,15 @@
 	return YES;
 }
 
+// New Autorotation support.
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationPortrait | UIInterfaceOrientationPortraitUpsideDown;
+}
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -64,10 +72,6 @@
 
 
 - (void)dealloc {
-	if (shareMenu) {
-		[shareMenu release];
-	}
-	
 	[mainView release];
     [super dealloc];
 }
@@ -206,41 +210,13 @@
 }
 
 - (void)share{	
-	if (!shareMenu) {
-		shareMenu = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"邮件分享", @"微博分享",@"飞信分享", nil];
-	}
-	
 	if (popoverController && [popoverController isPopoverVisible]) {
 		[popoverController dismissPopoverAnimated:YES];
 	}
 	
-	[shareMenu showFromBarButtonItem:self.navItem.rightBarButtonItem animated:YES];
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-	if (buttonIndex == actionSheet.cancelButtonIndex) {
-		return;
-	}
-	
-	if (buttonIndex == 0) {
-		//share via email
-		[self emailShare];
-	}else if (buttonIndex == 1) {
-		//share via weibo
-		[self weiboShare];
-	}else if (buttonIndex == 2) {
-		//share via weibo
-		[self fetionShare];
-	}else{
-		return;
-	}
-}
-
-
-- (void)emailShare{
 	if([MFMailComposeViewController canSendMail]){
 		MFMailComposeViewController *controller = [[MFMailComposeViewController alloc] init];
-		controller.modalPresentationStyle = UIModalPresentationPageSheet;
+		controller.modalPresentationStyle = UIModalPresentationFormSheet;
 		controller.mailComposeDelegate = self;
 		controller.navigationBar.tintColor = [UIColor lightGrayColor];
 		[controller setSubject:@"这篇新闻不错, 推荐你看看."];
@@ -258,42 +234,12 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
-- (void)weiboShare{	
-	WeiboViewController *controller = [[WeiboViewController alloc] initWithNibName:@"WeiboController" bundle:nil];
-	controller.modalPresentationStyle = UIModalPresentationFormSheet;
-	controller.content = [NSString stringWithFormat:@"%@ %@",item.title, item.link];
-	[self presentModalViewController:controller animated:YES];
-	[controller release];
-}
-
-- (void)fetionShare{	
-	[[UIPasteboard generalPasteboard] setValue:[NSString stringWithFormat:@"%@ %@",item.title, item.link] forPasteboardType:@"public.utf8-plain-text"];
-	
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"飞信分享" message:@"内容已经复制到剪贴版, 确认打开\n爱飞信分享给好友吗?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
-	[alert show];
-	[alert release];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-	if (buttonIndex == 1) {
-		if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"ifetion://"]]) {
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"ifetion://"]];
-		}else {
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://itunes.apple.com/us/app/ifetion/id365460856?mt=8"]];
-		}
-	}
-}
-
 #pragma mark -
 #pragma mark Split view support
 
 - (void)splitViewController:(UISplitViewController*)svc popoverController:(UIPopoverController*)pc willPresentViewController:(UIViewController *)aViewController{
 	if (popoverController) {
 		[popoverController dismissPopoverAnimated:YES];
-	}
-	
-	if (shareMenu && [shareMenu isVisible]) {
-		[shareMenu dismissWithClickedButtonIndex:2 animated:YES];
 	}
 }
 
